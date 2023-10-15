@@ -15,6 +15,10 @@ def yt_playlist_mp3(uri: str):
 
     uri: Youtube playlist url or first video in a playlist or a mix : type(str)
 
+    eg: python Utility yt_playlist_mp3 https://www.youtube.com/playlist?list=PLZKsYDC2S5rM6yKBs5ParXS6RWda6iAnK
+
+    put your own url
+
     '''
 
     p = Playlist(uri)
