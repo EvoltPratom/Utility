@@ -1,0 +1,8 @@
+{
+    "Media":"jpeg,jpg,png,tiff,svg,gif,ico,mp3,mp4,m4a,webm,webp,aac",
+    "Executables":"c,exe,cpp,bat,py,ino,html,msi,m,ipynb",
+    "Torrents":"torrent",
+    "Text":"txt,json,FILE,md,",
+    "Zips":"zip,rar",
+    "Docs":"pptx,ppt,docx,doc,pdf,csv,xlsx,xls"
+}
