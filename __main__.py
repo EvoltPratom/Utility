@@ -2,7 +2,7 @@ import argparse
 import os
 
 def test1():
-    print("sdgdsf")
+    print("Test1. It works")
 
 from util1 import organize, flatten
 from multimedia import img2pdf, pdf2img, convert_music, mp4tomp3, ytmp3, yt_playlist_mp3
