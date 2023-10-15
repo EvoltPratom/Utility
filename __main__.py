@@ -5,7 +5,7 @@ def test1():
     print("sdgdsf")
 
 from util1 import organize, flatten
-from converter import img2pdf, pdf2img, convert_music, mp4tomp3, ytmp3, yt_playlist_mp3
+from multimedia import img2pdf, pdf2img, convert_music, mp4tomp3, ytmp3, yt_playlist_mp3
 
 parser = argparse.ArgumentParser(description="PyUtils")
 
