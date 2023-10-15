@@ -99,7 +99,7 @@ help_strings = {
     ''',
 
     "yt_playlist_mp3": '''
-    Download a YouTube playlist and convert its videos to MP3 format.
+    Download a YouTube playlist and convert its videos to MP3 format.\n
 
     Usage: python Utility yt_playlist_mp3 <playlist_url>
 
