@@ -19,4 +19,6 @@ python Utility --help
 ```ps
 python Utility yt_playlist_mp3 <playlist_url>
 ```
-
+```ps
+python Utility organize --path C:\Downloads
+```
