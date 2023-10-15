@@ -17,6 +17,6 @@ python Utility --help
 ```
 ### Syntax
 ```ps
-python Utility yt_playlist_mp3 <playlisy-url>
+python Utility yt_playlist_mp3 <playlist_url>
 ```
 
