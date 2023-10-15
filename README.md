@@ -15,5 +15,8 @@ pip install -r requirements.txt
 cd ..
 python Utility --help
 ```
-
+### Syntax
+```ps
+python Utility yt_playlist_mp3 <playlisy-url>
+```
 
