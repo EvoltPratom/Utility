@@ -6,7 +6,7 @@ def test1():
     print("Test1. It works")
 
 from util1 import organize, flatten
-from multimedia import img2pdf, pdf2img, convert_music, mp4tomp3, ytmp3, yt_playlist_mp3
+from multimedia import img2pdf, pdf2img, convert_music, mp4tomp3, ytmp3, yt_playlist_mp3, combine_music
 
 parser = argparse.ArgumentParser(description="PyUtils")
 
@@ -57,7 +57,9 @@ parser_function6.add_argument("--path", default="sd", type=str, help="test")
 parser_function7 = subparsers.add_parser("yt_playlist_mp3", help=help_strings["yt_playlist_mp3"])
 parser_function7.add_argument("uri", type=str, help="playlist url")
 
-
+# Subparser for combine_music
+parser_function8 = subparsers.add_parser("combine_music", help=help_strings["combine_music"])
+parser_function8.add_argument("--path", type=str, default=None ,help="audio folder")
 
 # Parse command line arguments
 args = parser.parse_args()
@@ -82,5 +84,7 @@ elif func_name == "test1":
     test1()
 elif func_name == "yt_playlist_mp3":
     func(args.uri)
+elif func_name == "combine_music":
+    func(args.path)
 
 

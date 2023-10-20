@@ -1,12 +1,32 @@
 from PIL import Image
 from pydub import AudioSegment
-from moviepy.editor import VideoFileClip
+from moviepy.editor import VideoFileClip, AudioFileClip, concatenate_audioclips
 from pytube import YouTube, Playlist
 
 import os
 
 # Image refers to Image object from PIL library
 # pdf refers to pdf object of pypdf4
+
+def combine_music(path: str = None):
+
+    if path is None:
+        path = os.getcwd()
+    else:
+        path = os.path.join(os.getcwd(),path)
+    print(path)
+
+    audio_clips = []
+
+    for mp3_file in os.listdir(path):
+        audio_clips.append(AudioFileClip(os.path.join(path,mp3_file)))
+
+    out_path = os.path.join(path,"combined.mp3")
+    final_audio = concatenate_audioclips(audio_clips)
+    final_audio.write_audiofile(out_path)
+
+    # Close the audio clips
+    final_audio.close()
 
 def yt_playlist_mp3(uri: str):
     '''

@@ -64,6 +64,17 @@ help_strings = {
       --daudio   Delete original files after conversion (default: False).
     ''',
 
+    "combine_music": '''
+    Bulk combine  audio
+
+    Usage: python Utility combine_music [--path <audio_folder>]
+
+    Examples:
+      python Utility combine_music --path \path\to\audio_files
+    Options:
+      --path     Folder containing audio or video files (default: None).
+    ''',
+
     "ytmp3": '''
     Download a YouTube video and convert it to MP3 format.
 
