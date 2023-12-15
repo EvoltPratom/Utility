@@ -50,7 +50,7 @@ def organize(folder_path=None, config=None):
     if folder_path is None:
         folder_path = os.getcwd()
     if config is None:
-        config = r"D:\pyfiles\pyutils\test.json"
+        config = r"D:\pyfiles\Projects\Utility\test.json"
 
     # load config file as json
     if isinstance(config, str):

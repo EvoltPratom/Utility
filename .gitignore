@@ -1,4 +1,5 @@
+__pycache__/
 tests/
 utilsenv/
 utilenv
-__pycache__/
+# __pycache__/util1.cpython-310.pyc
